@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:CollaborationProtocolAgreement tns:cpaid="CPA_VIP001_OTA_VIP_RI2001_OTA_EBS_3" tns:version="3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:tns="http://www.oasis-open.org/committees/ebxml-cppa/schema/cpp-cpa-2_0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oasis-open.org/committees/ebxml-cppa/schema/cpp-cpa-2_0.xsd http://www.oasis-open.org/committees/ebxml-cppa/schema/cpp-cpa-2_0.xsd">
+ <tns:Status tns:value="agreed"/>
+ <tns:Start>2007-08-27T00:00:00+02:00</tns:Start>
+ <tns:End>2012-08-27T00:00:00+02:00</tns:End>
+ <tns:ConversationConstraints tns:concurrentConversations="0" tns:invocationLimit="0"/>
+  <tns:PartyInfo tns:defaultMshChannelId="VIP001_OTA_delChannel_welRM" tns:defaultMshPackageId="DefaultPackage" tns:partyName="Justitiële Info. dienst (JustID)">
+  <tns:PartyId tns:type="urn:epv:sysda">VIP001_OTA</tns:PartyId>
+  <tns:PartyRef xlink:href=""/>
+    <tns:CollaborationRole>
+   <tns:ProcessSpecification tns:name="VipActualiserenEPV" tns:uuid="VipActualiserenEPV" tns:version="0.8" xlink:href=""/>
+   <tns:Role tns:name="Beantwoorden" xlink:href=""/>
+   <tns:ServiceBinding>
+    <tns:Service tns:type="urn:epv:services">VipActualiserenEPV:0:8</tns:Service>
+    				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="VIPVerwerkingsresultaatEPV" tns:id="VipActualiserenEPV_Beantwoorden_Send_VIPVerwerkingsresultaatEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="VIPVerwerkingsresultaatEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Beantwoorden_Receive_VIPVerwerkingsresultaatEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="VIPnummerMeldingEPV" tns:id="VipActualiserenEPV_Beantwoorden_Send_VIPnummerMeldingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="VIPnummerMeldingEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Beantwoorden_Receive_VIPnummerMeldingEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="SamenloopMeldingEPV" tns:id="VipActualiserenEPV_Beantwoorden_Send_SamenloopMeldingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="SamenloopMeldingEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Beantwoorden_Receive_SamenloopMeldingEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="VIPpartijEPV" tns:id="VipActualiserenEPV_Beantwoorden_Send_VIPpartijEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="VIPpartijEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Beantwoorden_Receive_VIPpartijEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="InschrijvingVerwijzingEPV" tns:id="VipActualiserenEPV_Aanleveren_Receive_InschrijvingVerwijzingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="InschrijvingVerwijzingEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Aanleveren_Send_InschrijvingVerwijzingEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="WijzigingVerwijzingEPV" tns:id="VipActualiserenEPV_Aanleveren_Receive_WijzigingVerwijzingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="WijzigingVerwijzingEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Aanleveren_Send_WijzigingVerwijzingEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="VerwerkingsresultaatEPV" tns:id="VipActualiserenEPV_Aanleveren_Receive_VerwerkingsresultaatEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="VerwerkingsresultaatEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Aanleveren_Send_VerwerkingsresultaatEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="UitschrijvingVerwijzingEPV" tns:id="VipActualiserenEPV_Aanleveren_Receive_UitschrijvingVerwijzingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="UitschrijvingVerwijzingEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Aanleveren_Send_UitschrijvingVerwijzingEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>
+   </tns:ServiceBinding>
+  </tns:CollaborationRole>  <tns:CollaborationRole>
+   <tns:ProcessSpecification tns:name="VipZoekenPersoonEPV" tns:uuid="VipZoekenPersoonEPV" tns:version="0.8" xlink:href=""/>
+   <tns:Role tns:name="Beantwoorden" xlink:href=""/>
+   <tns:ServiceBinding>
+    <tns:Service tns:type="urn:epv:services">VipZoekenPersoonEPV:0:8</tns:Service>
+    				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="PartijAntwoordEPV" tns:id="VipZoekenPersoonEPV_Beantwoorden_Send_PartijAntwoordEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipZoekenPersoonEPV" tns:businessTransactionActivity="VipZoekenPersoonEPV" tns:requestOrResponseAction="PartijAntwoordEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipZoekenPersoonEPV_Beantwoorden_Receive_PartijAntwoordEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="NegatiefPartijAntwoordEPV" tns:id="VipZoekenPersoonEPV_Beantwoorden_Send_NegatiefPartijAntwoordEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipZoekenPersoonEPV" tns:businessTransactionActivity="VipZoekenPersoonEPV" tns:requestOrResponseAction="NegatiefPartijAntwoordEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipZoekenPersoonEPV_Beantwoorden_Receive_NegatiefPartijAntwoordEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="VIPVerwerkingsresultaatEPV" tns:id="VipZoekenPersoonEPV_Beantwoorden_Send_VIPVerwerkingsresultaatEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipZoekenPersoonEPV" tns:businessTransactionActivity="VipZoekenPersoonEPV" tns:requestOrResponseAction="VIPVerwerkingsresultaatEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipZoekenPersoonEPV_Beantwoorden_Receive_VIPVerwerkingsresultaatEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="PartijVraagEPV" tns:id="VipZoekenPersoonEPV_Vragen_Receive_PartijVraagEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipZoekenPersoonEPV" tns:businessTransactionActivity="VipZoekenPersoonEPV" tns:requestOrResponseAction="PartijVraagEPV"/>
+						<tns:ChannelId>VIP001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipZoekenPersoonEPV_Vragen_Send_PartijVraagEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>
+   </tns:ServiceBinding>
+  </tns:CollaborationRole>
+  
+    <tns:DeliveryChannel tns:channelId="VIP001_OTA_delChannel_welRM" tns:transportId="VIP001_OTA_transportHttp" tns:docExchangeId="VIP001_OTA_docExchange_welRM">
+   <tns:MessagingCharacteristics tns:syncReplyMode="none" tns:ackRequested="always" tns:ackSignatureRequested="never" tns:duplicateElimination="always"/>
+  </tns:DeliveryChannel>
+  <tns:Transport tns:transportId="VIP001_OTA_transportHttp">
+   <tns:TransportSender>
+    <tns:TransportProtocol tns:version="1.1">HTTP</tns:TransportProtocol>
+   </tns:TransportSender>
+   <tns:TransportReceiver>
+    <tns:TransportProtocol tns:version="1.1">HTTP</tns:TransportProtocol>
+    <tns:Endpoint tns:type="allPurpose" tns:uri="http://159.46.248.153:4080/exchange/JUBES001"/>
+   </tns:TransportReceiver>
+  </tns:Transport>
+    <tns:DocExchange tns:docExchangeId="VIP001_OTA_docExchange_welRM">
+    <tns:ebXMLSenderBinding tns:version="2.0">
+    <tns:ReliableMessaging>
+     <!-- We require RetryInterval -->
+     <tns:Retries>2</tns:Retries>
+     <tns:RetryInterval>PT2H</tns:RetryInterval>
+     <tns:MessageOrderSemantics>NotGuaranteed</tns:MessageOrderSemantics>
+    </tns:ReliableMessaging>
+    <tns:PersistDuration>P1D</tns:PersistDuration>
+    
+    
+   </tns:ebXMLSenderBinding>
+   <tns:ebXMLReceiverBinding tns:version="2.0">
+    <tns:ReliableMessaging>
+     <!-- We require RetryInterval -->
+     <tns:Retries>2</tns:Retries>
+     <tns:RetryInterval>PT2H</tns:RetryInterval>
+     <tns:MessageOrderSemantics>NotGuaranteed</tns:MessageOrderSemantics>
+    </tns:ReliableMessaging>
+    <tns:PersistDuration>P1D</tns:PersistDuration>
+    
+    
+   </tns:ebXMLReceiverBinding>
+  </tns:DocExchange>
+
+ </tns:PartyInfo>
+  <tns:PartyInfo tns:defaultMshChannelId="RI2001_OTA_delChannel_welRM" tns:defaultMshPackageId="DefaultPackage" tns:partyName="Centraal Justitieel Incasso Bureau (OTA)">
+  <tns:PartyId tns:type="urn:epv:sysda">RI2001_OTA</tns:PartyId>
+  <tns:PartyRef xlink:href=""/>
+    <tns:CollaborationRole>
+   <tns:ProcessSpecification tns:name="VipActualiserenEPV" tns:uuid="VipActualiserenEPV" tns:version="0.8" xlink:href=""/>
+   <tns:Role tns:name="Aanleveren" xlink:href=""/>
+   <tns:ServiceBinding>
+    <tns:Service tns:type="urn:epv:services">VipActualiserenEPV:0:8</tns:Service>
+    				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="InschrijvingVerwijzingEPV" tns:id="VipActualiserenEPV_Aanleveren_Send_InschrijvingVerwijzingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="InschrijvingVerwijzingEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Aanleveren_Receive_InschrijvingVerwijzingEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="WijzigingVerwijzingEPV" tns:id="VipActualiserenEPV_Aanleveren_Send_WijzigingVerwijzingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="WijzigingVerwijzingEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Aanleveren_Receive_WijzigingVerwijzingEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="VerwerkingsresultaatEPV" tns:id="VipActualiserenEPV_Aanleveren_Send_VerwerkingsresultaatEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="VerwerkingsresultaatEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Aanleveren_Receive_VerwerkingsresultaatEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="UitschrijvingVerwijzingEPV" tns:id="VipActualiserenEPV_Aanleveren_Send_UitschrijvingVerwijzingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="UitschrijvingVerwijzingEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Aanleveren_Receive_UitschrijvingVerwijzingEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="VIPVerwerkingsresultaatEPV" tns:id="VipActualiserenEPV_Beantwoorden_Receive_VIPVerwerkingsresultaatEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="VIPVerwerkingsresultaatEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Beantwoorden_Send_VIPVerwerkingsresultaatEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="VIPnummerMeldingEPV" tns:id="VipActualiserenEPV_Beantwoorden_Receive_VIPnummerMeldingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="VIPnummerMeldingEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Beantwoorden_Send_VIPnummerMeldingEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="VIPpartijEPV" tns:id="VipActualiserenEPV_Beantwoorden_Receive_VIPpartijEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="VIPpartijEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Beantwoorden_Send_VIPpartijEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="SamenloopMeldingEPV" tns:id="VipActualiserenEPV_Beantwoorden_Receive_SamenloopMeldingEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipActualiserenEPV" tns:businessTransactionActivity="VipActualiserenEPV" tns:requestOrResponseAction="SamenloopMeldingEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipActualiserenEPV_Beantwoorden_Send_SamenloopMeldingEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>
+   </tns:ServiceBinding>
+  </tns:CollaborationRole>  <tns:CollaborationRole>
+   <tns:ProcessSpecification tns:name="VipZoekenPersoonEPV" tns:uuid="VipZoekenPersoonEPV" tns:version="0.8" xlink:href=""/>
+   <tns:Role tns:name="Vragen" xlink:href=""/>
+   <tns:ServiceBinding>
+    <tns:Service tns:type="urn:epv:services">VipZoekenPersoonEPV:0:8</tns:Service>
+    				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:action="PartijVraagEPV" tns:id="VipZoekenPersoonEPV_Vragen_Send_PartijVraagEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipZoekenPersoonEPV" tns:businessTransactionActivity="VipZoekenPersoonEPV" tns:requestOrResponseAction="PartijVraagEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipZoekenPersoonEPV_Vragen_Receive_PartijVraagEPV</tns:OtherPartyActionBinding>
+				</tns:CanSend>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="PartijAntwoordEPV" tns:id="VipZoekenPersoonEPV_Beantwoorden_Receive_PartijAntwoordEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipZoekenPersoonEPV" tns:businessTransactionActivity="VipZoekenPersoonEPV" tns:requestOrResponseAction="PartijAntwoordEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipZoekenPersoonEPV_Beantwoorden_Send_PartijAntwoordEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="NegatiefPartijAntwoordEPV" tns:id="VipZoekenPersoonEPV_Beantwoorden_Receive_NegatiefPartijAntwoordEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipZoekenPersoonEPV" tns:businessTransactionActivity="VipZoekenPersoonEPV" tns:requestOrResponseAction="NegatiefPartijAntwoordEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipZoekenPersoonEPV_Beantwoorden_Send_NegatiefPartijAntwoordEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:action="VIPVerwerkingsresultaatEPV" tns:id="VipZoekenPersoonEPV_Beantwoorden_Receive_VIPVerwerkingsresultaatEPV" tns:packageId="DefaultPackage">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="none" tns:isAuthorizationRequired="true" tns:isConfidential="none" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="none" tns:timeToPerform="PT30S"/>
+						<tns:ActionContext tns:binaryCollaboration="VipZoekenPersoonEPV" tns:businessTransactionActivity="VipZoekenPersoonEPV" tns:requestOrResponseAction="VIPVerwerkingsresultaatEPV"/>
+						<tns:ChannelId>RI2001_OTA_delChannel_welRM</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>VipZoekenPersoonEPV_Beantwoorden_Send_VIPVerwerkingsresultaatEPV</tns:OtherPartyActionBinding>
+				</tns:CanReceive>
+   </tns:ServiceBinding>
+  </tns:CollaborationRole>
+  
+    <tns:DeliveryChannel tns:channelId="RI2001_OTA_delChannel_welRM" tns:transportId="RI2001_OTA_transportHttp" tns:docExchangeId="RI2001_OTA_docExchange_welRM">
+   <tns:MessagingCharacteristics tns:syncReplyMode="none" tns:ackRequested="always" tns:ackSignatureRequested="never" tns:duplicateElimination="always"/>
+  </tns:DeliveryChannel>
+  <tns:Transport tns:transportId="RI2001_OTA_transportHttp">
+   <tns:TransportSender>
+    <tns:TransportProtocol tns:version="1.1">HTTP</tns:TransportProtocol>
+   </tns:TransportSender>
+   <tns:TransportReceiver>
+    <tns:TransportProtocol tns:version="1.1">HTTP</tns:TransportProtocol>
+    <tns:Endpoint tns:type="allPurpose" tns:uri="http://159.46.248.153:4080/exchange/JUBES001"/>
+   </tns:TransportReceiver>
+  </tns:Transport>
+    <tns:DocExchange tns:docExchangeId="RI2001_OTA_docExchange_welRM">
+    <tns:ebXMLSenderBinding tns:version="2.0">
+    <tns:ReliableMessaging>
+     <!-- We require RetryInterval -->
+     <tns:Retries>2</tns:Retries>
+     <tns:RetryInterval>PT2H</tns:RetryInterval>
+     <tns:MessageOrderSemantics>NotGuaranteed</tns:MessageOrderSemantics>
+    </tns:ReliableMessaging>
+    <tns:PersistDuration>P1D</tns:PersistDuration>
+    
+    
+   </tns:ebXMLSenderBinding>
+   <tns:ebXMLReceiverBinding tns:version="2.0">
+    <tns:ReliableMessaging>
+     <!-- We require RetryInterval -->
+     <tns:Retries>2</tns:Retries>
+     <tns:RetryInterval>PT2H</tns:RetryInterval>
+     <tns:MessageOrderSemantics>NotGuaranteed</tns:MessageOrderSemantics>
+    </tns:ReliableMessaging>
+    <tns:PersistDuration>P1D</tns:PersistDuration>
+    
+    
+   </tns:ebXMLReceiverBinding>
+  </tns:DocExchange>
+
+ </tns:PartyInfo>
+ <tns:SimplePart tns:id="DefaultSimplePart" tns:mimetype="application/xml"/>
+ <tns:Packaging tns:id="DefaultPackage">
+  <tns:ProcessingCapabilities tns:generate="true" tns:parse="true"/>
+  <tns:CompositeList>
+   <tns:Composite tns:id="DefaultComposite" tns:mimeparameters="type=text/xml" tns:mimetype="multipart/related">
+    <tns:Constituent tns:excludedFromSignature="false" tns:idref="DefaultSimplePart" tns:maxOccurs="0" tns:minOccurs="0"/>
+   </tns:Composite>
+  </tns:CompositeList>
+ </tns:Packaging>
+</tns:CollaborationProtocolAgreement> 

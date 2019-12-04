@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<tns:CollaborationProtocolAgreement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.oasis-open.org/committees/ebxml-cppa/schema/cpp-cpa-2_0.xsd" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xsi:schemaLocation="http://www.oasis-open.org/committees/ebxml-cppa/schema/cpp-cpa-2_0.xsd                  http://www.oasis-open.org/committees/ebxml-cppa/schema/cpp-cpa-2_0.xsd" tns:cpaid="CPAID_CJIB_JustID_0001" tns:version="1.0">
+	<tns:Status tns:value="agreed"/>
+	<tns:Start>2007-01-01T00:00:00Z</tns:Start>
+	<tns:End>2017-01-01T00:00:00Z</tns:End>
+	<tns:PartyInfo tns:partyName="Centraal Justitieel Incasso Bureau (OTA)" tns:defaultMshChannelId="CJIB_defaultDeliveryChannel_JABProfileReliableMessaging" tns:defaultMshPackageId="defaultPackage_JABProfile">
+		<tns:PartyId tns:type="urn:epv:sysda">RI2001_OTA</tns:PartyId>
+		<tns:PartyRef xlink:href="http://www.cjib.nl" xlink:type="simple"/>
+		<tns:CollaborationRole>
+			<tns:ProcessSpecification tns:name="OM_Afdoening" tns:version="0.1" xlink:href="http://www.e-pv.nl" tns:uuid="http://www.e-pv.nl/" http://www.w3.org/1999/xlink:type="simple"/>
+			<tns:Role tns:name="CJIB" xlink:href="http://www.e-pv.nl" http://www.w3.org/1999/xlink:type="simple"/>
+			<tns:ServiceBinding>
+				<tns:Service>urn:epv:services:OM_Afdoening:1:0</tns:Service>
+				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:id="CJIB_S_BT00581_BD00201" tns:action="RegistratieMelding" tns:packageId="defaultPackage_JABProfile" http://www.w3.org/1999/xlink:type="simple">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="transient" tns:isAuthorizationRequired="true" tns:isConfidential="transient" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="transient" tns:timeToAcknowledgeReceipt="PT8H" tns:timeToPerform="P2D"/>
+						<tns:ChannelId>CJIB_defaultDeliveryChannel_JABProfileReliableMessaging</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>JustID_R_BT00581_BD00201</tns:OtherPartyActionBinding>
+				</tns:CanSend>
+				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:id="CJIB_S_BT00588_BD00204" tns:action="VerificatieRecidive" tns:packageId="defaultPackage_JABProfile" http://www.w3.org/1999/xlink:type="simple">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="transient" tns:isAuthorizationRequired="true" tns:isConfidential="transient" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="transient" tns:timeToAcknowledgeReceipt="PT8H" tns:timeToPerform="P2D"/>
+						<tns:ChannelId>CJIB_defaultDeliveryChannel_JABProfileReliableMessaging</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>JustID_R_BT00588_BD00204</tns:OtherPartyActionBinding>
+				</tns:CanSend>
+				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:id="CJIB_R_BT00588_BD00205" tns:action="RecidiveAntwoord" tns:packageId="defaultPackage_JABProfile" http://www.w3.org/1999/xlink:type="simple">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="transient" tns:isAuthorizationRequired="true" tns:isConfidential="transient" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="transient" tns:timeToAcknowledgeReceipt="PT8H" tns:timeToPerform="P2D"/>
+						<tns:ChannelId>CJIB_defaultDeliveryChannel_JABProfileReliableMessaging</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>JustID_S_BT00588_BD00205</tns:OtherPartyActionBinding>
+				</tns:CanReceive>
+				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:id="CJIB_R_BT00581_BD00206" tns:action="VerwerkingsresultaatBedrijfsdocument" tns:packageId="defaultPackage_JABProfile" http://www.w3.org/1999/xlink:type="simple">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="transient" tns:isAuthorizationRequired="true" tns:isConfidential="transient" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="transient" tns:timeToAcknowledgeReceipt="PT8H" tns:timeToPerform="P2D"/>
+						<tns:ChannelId>CJIB_defaultDeliveryChannel_JABProfileReliableMessaging</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>JustID_S_BT00581_BD00206</tns:OtherPartyActionBinding>
+				</tns:CanReceive>
+			</tns:ServiceBinding>
+		</tns:CollaborationRole>
+		<tns:DeliveryChannel tns:channelId="CJIB_defaultDeliveryChannel_JABProfileBestEffort" tns:docExchangeId="CJIB_BASIS_BestEffort" tns:transportId="CJIB_transport_HTTP">
+			<tns:MessagingCharacteristics tns:syncReplyMode="none" tns:ackRequested="never" tns:actor="urn:oasis:names:tc:ebxml-msg:actor:toPartyMSH" tns:ackSignatureRequested="never" tns:duplicateElimination="never"/>
+		</tns:DeliveryChannel>
+		<tns:DeliveryChannel tns:channelId="CJIB_defaultDeliveryChannel_JABProfileReliableMessaging" tns:docExchangeId="CJIB_BASIS_ReliableMessaging" tns:transportId="CJIB_transport_HTTP">
+			<tns:MessagingCharacteristics tns:syncReplyMode="none" tns:ackRequested="always" tns:actor="urn:oasis:names:tc:ebxml-msg:actor:toPartyMSH" tns:ackSignatureRequested="never" tns:duplicateElimination="always"/>
+		</tns:DeliveryChannel>
+		<tns:Transport tns:transportId="CJIB_transport_HTTP">
+			<tns:TransportSender>
+				<tns:TransportProtocol tns:version="1.1">HTTP</tns:TransportProtocol>
+			</tns:TransportSender>
+			<tns:TransportReceiver>
+				<tns:TransportProtocol tns:version="1.1">HTTP</tns:TransportProtocol>
+				<tns:Endpoint tns:uri="http://cjibu602.sto.cjib.minjus.nl:7500/b2b/transportServlet" tns:type="allPurpose"/>
+			</tns:TransportReceiver>
+		</tns:Transport>
+		<tns:DocExchange tns:docExchangeId="CJIB_BASIS_BestEffort">
+			<tns:ebXMLSenderBinding tns:version="2.0"/>
+			<tns:ebXMLReceiverBinding tns:version="2.0"/>
+		</tns:DocExchange>
+		<tns:DocExchange tns:docExchangeId="CJIB_BASIS_ReliableMessaging">
+			<tns:ebXMLSenderBinding tns:version="2.0">
+				<tns:ReliableMessaging>
+					<tns:Retries>8</tns:Retries>
+					<tns:RetryInterval>PT3H</tns:RetryInterval>
+					<tns:MessageOrderSemantics>NotGuaranteed</tns:MessageOrderSemantics>
+				</tns:ReliableMessaging>
+				<tns:PersistDuration>P1D</tns:PersistDuration>
+			</tns:ebXMLSenderBinding>
+			<tns:ebXMLReceiverBinding tns:version="2.0">
+				<tns:ReliableMessaging>
+					<tns:Retries>8</tns:Retries>
+					<tns:RetryInterval>PT3H</tns:RetryInterval>
+					<tns:MessageOrderSemantics>NotGuaranteed</tns:MessageOrderSemantics>
+				</tns:ReliableMessaging>
+				<tns:PersistDuration>P1D</tns:PersistDuration>
+			</tns:ebXMLReceiverBinding>
+		</tns:DocExchange>
+	</tns:PartyInfo>
+	<tns:PartyInfo tns:partyName="Justitiële Info. dienst (JustID) (OTA) ALM" tns:defaultMshChannelId="JustID_defaultDeliveryChannel_JABProfileReliableMessaging" tns:defaultMshPackageId="defaultPackage_JABProfile">
+		<tns:PartyId tns:type="urn:epv:sysda">JD0021_OTA</tns:PartyId>
+		<tns:PartyRef xlink:href="http://www.JustID.nl" http://www.w3.org/1999/xlink:type="simple"/>
+		<tns:CollaborationRole>
+			<tns:ProcessSpecification tns:name="OM_Afdoening" tns:version="0.1" xlink:href="http://www.e-pv.nl" tns:uuid="http://www.e-pv.nl/" http://www.w3.org/1999/xlink:type="simple"/>
+			<tns:Role tns:name="JustID" xlink:href="http://www.e-pv.nl" http://www.w3.org/1999/xlink:type="simple"/>
+			<tns:ServiceBinding>
+				<tns:Service>urn:epv:services:OM_Afdoening:1:0</tns:Service>
+				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:id="JustID_S_BT00588_BD00205" tns:action="RecidiveAntwoord" tns:packageId="defaultPackage_JABProfile" http://www.w3.org/1999/xlink:type="simple">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="transient" tns:isAuthorizationRequired="true" tns:isConfidential="transient" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="transient" tns:timeToAcknowledgeReceipt="PT8H" tns:timeToPerform="P2D"/>
+						<tns:ChannelId>JustID_defaultDeliveryChannel_JABProfileReliableMessaging</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>CJIB_R_BT00588_BD00205</tns:OtherPartyActionBinding>
+				</tns:CanSend>
+				<tns:CanSend>
+					<tns:ThisPartyActionBinding tns:id="JustID_S_BT00581_BD00206" tns:action="VerwerkingsresultaatBedrijfsdocument" tns:packageId="defaultPackage_JABProfile" http://www.w3.org/1999/xlink:type="simple">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="transient" tns:isAuthorizationRequired="true" tns:isConfidential="transient" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="transient" tns:timeToAcknowledgeReceipt="PT8H" tns:timeToPerform="P2D"/>
+						<tns:ChannelId>JustID_defaultDeliveryChannel_JABProfileReliableMessaging</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>CJIB_R_BT00581_BD00206</tns:OtherPartyActionBinding>
+				</tns:CanSend>
+				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:id="JustID_R_BT00581_BD00201" tns:action="RegistratieMelding" tns:packageId="defaultPackage_JABProfile" http://www.w3.org/1999/xlink:type="simple">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="transient" tns:isAuthorizationRequired="true" tns:isConfidential="transient" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="transient" tns:timeToAcknowledgeReceipt="PT8H" tns:timeToPerform="P2D"/>
+						<tns:ChannelId>JustID_defaultDeliveryChannel_JABProfileReliableMessaging</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>CJIB_S_BT00581_BD00201</tns:OtherPartyActionBinding>
+				</tns:CanReceive>
+				<tns:CanReceive>
+					<tns:ThisPartyActionBinding tns:id="JustID_R_BT00588_BD00204" tns:action="VerificatieRecidive" tns:packageId="defaultPackage_JABProfile" http://www.w3.org/1999/xlink:type="simple">
+						<tns:BusinessTransactionCharacteristics tns:isAuthenticated="transient" tns:isAuthorizationRequired="true" tns:isConfidential="transient" tns:isIntelligibleCheckRequired="false" tns:isNonRepudiationReceiptRequired="false" tns:isNonRepudiationRequired="false" tns:isTamperProof="transient" tns:timeToAcknowledgeReceipt="PT8H" tns:timeToPerform="P2D"/>
+						<tns:ChannelId>JustID_defaultDeliveryChannel_JABProfileReliableMessaging</tns:ChannelId>
+					</tns:ThisPartyActionBinding>
+					<tns:OtherPartyActionBinding>CJIB_S_BT00588_BD00204</tns:OtherPartyActionBinding>
+				</tns:CanReceive>
+			</tns:ServiceBinding>
+		</tns:CollaborationRole>
+		<tns:DeliveryChannel tns:channelId="JustID_defaultDeliveryChannel_JABProfileBestEffort" tns:docExchangeId="JustID_BASIS_BestEffort" tns:transportId="JustID_transport_HTTP">
+			<tns:MessagingCharacteristics tns:syncReplyMode="none" tns:ackRequested="never" tns:actor="urn:oasis:names:tc:ebxml-msg:actor:toPartyMSH" tns:ackSignatureRequested="never" tns:duplicateElimination="never"/>
+		</tns:DeliveryChannel>
+		<tns:DeliveryChannel tns:channelId="JustID_defaultDeliveryChannel_JABProfileReliableMessaging" tns:docExchangeId="JustID_BASIS_ReliableMessaging" tns:transportId="JustID_transport_HTTP">
+			<tns:MessagingCharacteristics tns:syncReplyMode="none" tns:ackRequested="always" tns:actor="urn:oasis:names:tc:ebxml-msg:actor:toPartyMSH" tns:ackSignatureRequested="never" tns:duplicateElimination="always"/>
+		</tns:DeliveryChannel>
+		<tns:Transport tns:transportId="JustID_transport_HTTP">
+			<tns:TransportSender>
+				<tns:TransportProtocol tns:version="1.1">HTTP</tns:TransportProtocol>
+			</tns:TransportSender>
+			<tns:TransportReceiver>
+				<tns:TransportProtocol tns:version="1.1">HTTP</tns:TransportProtocol>
+				<tns:Endpoint tns:uri="http://10.60.20.95:4080/exchange/JD0021_OTA" tns:type="allPurpose"/>
+			</tns:TransportReceiver>
+		</tns:Transport>
+		<tns:DocExchange tns:docExchangeId="JustID_BASIS_BestEffort">
+			<tns:ebXMLSenderBinding tns:version="2.0"/>
+			<tns:ebXMLReceiverBinding tns:version="2.0"/>
+		</tns:DocExchange>
+		<tns:DocExchange tns:docExchangeId="JustID_BASIS_ReliableMessaging">
+			<tns:ebXMLSenderBinding tns:version="2.0">
+				<tns:ReliableMessaging>
+					<tns:Retries>8</tns:Retries>
+					<tns:RetryInterval>PT3H</tns:RetryInterval>
+					<tns:MessageOrderSemantics>NotGuaranteed</tns:MessageOrderSemantics>
+				</tns:ReliableMessaging>
+				<tns:PersistDuration>P1D</tns:PersistDuration>
+			</tns:ebXMLSenderBinding>
+			<tns:ebXMLReceiverBinding tns:version="2.0">
+				<tns:ReliableMessaging>
+					<tns:Retries>8</tns:Retries>
+					<tns:RetryInterval>PT3H</tns:RetryInterval>
+					<tns:MessageOrderSemantics>NotGuaranteed</tns:MessageOrderSemantics>
+				</tns:ReliableMessaging>
+				<tns:PersistDuration>P1D</tns:PersistDuration>
+			</tns:ebXMLReceiverBinding>
+		</tns:DocExchange>
+	</tns:PartyInfo>
+	<tns:SimplePart tns:id="DefaultSimplePart" tns:mimetype="application/xml"/>
+	<tns:Packaging tns:id="defaultPackage_JABProfile">
+		<tns:ProcessingCapabilities tns:parse="true" tns:generate="true"/>
+		<tns:CompositeList>
+			<tns:Composite tns:id="DefaultComposite" tns:mimetype="type=text/xml">
+				<tns:Constituent tns:idref="DefaultSimplePart" http://www.oasis-open.org/committees/ebxml-cppa/schema/cpp-cpa-2_0.xsd:excludedFromSignature="false"/>
+			</tns:Composite>
+		</tns:CompositeList>
+	</tns:Packaging>
+</tns:CollaborationProtocolAgreement>
